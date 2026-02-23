@@ -1,13 +1,17 @@
 # Architecture
 
-## Domain
+## Purpose
 
-Deployment Reliability Monitoring
+deployment-monitor evaluates service health and change events to reduce operational risk.
 
 ## Components
 
-1. Input interface (CLI/web/API)
-2. Core detection/analysis logic
-3. Storage/reporting adapters
-4. Alerting/notification output
-5. CI and test validation gate
+- Signal intake layer
+- Assessment engine
+- Output formatter for downstream automation
+
+## Runtime Flow
+
+1. Receive signal text/event.
+2. Compute deterministic risk score.
+3. Emit structured assessment result.
